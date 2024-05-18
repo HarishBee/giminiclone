@@ -1,0 +1,185 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins' , sans-serif;
+    box-sizing: border-box;
+} 
+html{
+    scroll-behavior: smooth;
+}
+.loginb{
+    background-color:  #001878;
+    border: 1px solid #151939;
+    padding: 10px;
+    border-radius: 19px;
+    display: inline;
+    position:relative;
+    left:20px;
+    top:280px ;
+    font-size:25px;
+    color:aliceblue;
+    text-decoration:none;
+}
+body{
+
+    height: 100%;
+    overflow: hidden;
+    
+    color: #f1f1f1;
+}
+.conlog{
+    background-image: url(https://erp.today/wp-content/uploads/2022/12/Artificial_Intelligence.jpg);
+    background-size: cover; 
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    opacity: 0.8;
+
+}
+.register{
+    background-color: #4b389f;
+    border: 1px solid #291548;
+    padding: 10px;
+    border-radius: 19px;
+    display: inline;
+    position:relative;
+    left: 1200px;
+    bottom: 700px;  
+    font-size:20px;
+    color: white;
+    text-decoration: none;
+}
+#sp{
+    color:antiquewhite;
+}
+#si{
+    position: relative;
+    left: 20px;
+    top: 10px;
+}
+.lp{
+    position: absolute;
+    bottom: 230px;
+    left: 210px;
+    font-size: 18px;
+    text-decoration: none;
+    color:whitesmoke;
+}
+.hi{
+    position: absolute;
+    background-color:rgba(66, 61, 61, 0.6);
+    border:3px solid  #271884;
+    padding-left: 130px;
+    padding-top: 20px;
+    height: 540px;
+    width: 400px;
+    left:36%;
+    top: 16.5%;
+    border-radius: 19px;
+}
+
+
+.mail{
+    position: relative;
+    color: #001878;
+    font-size: 19px;
+
+}
+.email{
+    position:absolute;
+    right:45px;
+}
+.psd{
+    position: absolute;
+    right: 45px;
+    top: 60px;
+}
+.g-recaptcha{
+   
+    position:absolute;
+    
+    top: 150px;
+    right: 45px;
+}
+.remember{
+    position: relative;
+    right:80px;
+    top:215px;
+    color: whitesmoke;
+    font-size: 18px;
+    gap: 10px;
+}
+.h3{
+    position:absolute;
+    left:140px;
+    top: 360px;
+    font-size:14px;
+}
+.con_google{
+    
+    background-color: #fff;
+    position: relative;
+    top: 310px;
+    right: 83px;
+    color: #333;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+    width:304px;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+  }
+  
+.con_google:hover{
+    background-color: #f1f1f1;
+    margin-right: 5px;
+
+  }
+.con_fac{
+    width:304px;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    position: relative;
+    top: 320px;
+    right: 83px;
+    background-color: #3b5998; 
+    color: #fff; 
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+.con_facebook:hover {
+    background-color: #2d4373;
+    margin-right: 5px; 
+}
+.h6{
+    position:relative;
+    color: #ababaa;
+    top:340px;
+    right:21px;
+    font-size:12px;
+}
+.err{
+    position:relative;
+    top:60px;
+    left:36px;
+    color:#af7777;
+}
+#icn{
+    margin-right: 4%
+}
