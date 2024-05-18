@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>activity</title>
+    <link rel="stylesheet" href="{% static 'css/about.css' %}">
+</head>
+<body>
+    <div class="con">
+    
+        <img src="{% static 'img\65ac1050-b036-4d14-9a54-2f16fcaaf2e4.jpg' %}" class="img">
+        <a href="{% url 'index' %}" class="skih">Home</a>
+        <div class="ski">
+        <h1 >AI SKILLS</h1>
+        <h2>AI Activity</h2>
+        <ul>
+            <li><span>Data Collection and Preprocessing:</span> Gathering and preprocessing large datasets are essential activities in AI. This involves collecting relevant data from various sources, cleaning and formatting it for analysis, and ensuring its quality and consistency.</li>
+            <li><span>Machine Learning Model Training:</span> Training machine learning models involves feeding data into algorithms to enable them to learn patterns and make predictions or decisions. This process often requires tuning model parameters, selecting appropriate algorithms, and evaluating model performance.</li>
+            <li><span>Natural Language Processing (NLP):</span> NLP activities involve processing and analyzing human language data, such as text and speech. This includes tasks like text classification, sentiment analysis, named entity recognition, and language translation.</li>
+            <li><span>Computer Vision:</span> Computer vision activities focus on analyzing and interpreting visual data, such as images and videos. This includes tasks like object detection, image classification, image segmentation, and facial recognition.</li>
+            <li><span>Deep Learning:</span> Deep learning activities involve training neural networks with multiple layers to learn complex patterns from data. This includes building and training deep neural network architectures such as convolutional neural networks (CNNs), recurrent neural networks (RNNs), and generative adversarial networks (GANs).</li>
+            <li><span>Reinforcement Learning:</span> Reinforcement learning activities involve training agents to make decisions and take actions in an environment to maximize cumulative rewards. This includes tasks like training autonomous agents in games, robotics, and control systems.</li>
+            <li><span>Model Evaluation and Validation:</span> Evaluating and validating AI models is crucial to ensure their performance and reliability. This involves assessing metrics such as accuracy, precision, recall, and F1 score, as well as conducting cross-validation and hypothesis testing.</li>
+            <li><span>Deployment and Integration:</span> Deploying AI models into production environments involves integrating them with existing systems and applications. This includes tasks like building APIs, containerizing models for deployment, and monitoring model performance in real-world settings.</li>
+             <li><span>Optimization and Fine-Tuning:</span> Optimizing AI models to improve performance and efficiency is an ongoing activity. This includes techniques such as hyperparameter tuning, feature engineering, and model compression to reduce size and inference time.</li>
+            <li><span>Ethical Considerations and Bias Mitigation:</span> Addressing ethical considerations and mitigating bias in AI systems are important activities. This involves ensuring fairness, transparency, and accountability in AI decision-making processes and addressing biases in training data and algorithms.</li>
+        </ul>
+        </div>
+    </div>
+</body>
+</html>

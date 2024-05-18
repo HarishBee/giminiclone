@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'css/regi.css' %}">
+</head>
+<body>
+    <div class="bg">    
+    <img class="img1" src="{% static 'img\C:\Users\Harish Babu G\OneDrive\Desktop\newcom\bab\static\img\music.jpg' %}" alt="bg">
+    <div id="reg">Sign up</div>
+    <form class="form" action="{% url 'register' %}" method="POST">
+        {% csrf_token %}
+        {{ register.as_p }}
+    <button class="button"  type="submit">submit</button>
+    </form>> 
+    </div>
+</body> 
+</html>

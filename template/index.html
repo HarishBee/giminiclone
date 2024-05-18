@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'css\indx.css' %}">
+    <script src="https://kit.fontawesome.com/d7b2d1dd02.js" crossorigin="anonymous"></script>
+    
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="" class="logo">
+                <ul id="sidemenu">
+                    <i id="ico" class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+                    <li><a href="#header">Home</a> </li>
+                    <li><a href="#about">About</a> </li>
+                    <li><a href="#services">Services</a> </li>
+                    <li><a href="#pricing">Pricing</a> </li>
+                    <li><a href="#contact">Contact</a> </li>
+                    <li><a class="login1" href="login">login</a></li>
+                    
+                </ul>
+                <i id="ico" class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text"><p>Open AI</p>
+            <h1> <span>Harish</span> <br>Real solutions </h1></div>
+            <a href="login" class="login"><i class="fa-solid fa-arrow-right-to-bracket"></i> Try now</a>
+        </div>
+    </div>
+    
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img style="height: 550px;width: 450px;position: relative; top: 10px;" src="static\img\ai-artificial-intelligence-logo-artificial-intelligence-vector.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub">About AI</h1> 
+                    <p>Artificial Intelligence (AI) is a branch of computer science dedicated to creating systems or machines capable of performing tasks that would typically require human intelligence. These tasks include problem-solving, learning, perception, understanding natural language, and more.
+
+                        AI systems are designed to emulate human cognitive functions such as reasoning, problem-solving, planning, learning, perception, and language understanding. They rely on algorithms and data to analyze patterns, make predictions, and generate insights.</p>   
+                    <div class="tab-titles">
+                        <p class="tab-links active-links" onclick="opentab('Skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('Education')">Education</p>
+                        <p class="tab-links" onclick="opentab('Activicy')">Activicy</p>
+                </div>
+                <div class="tab-content active-tab" id="Skills">
+                    <ul>
+                        <li><span>Machine Learning:</span> This is perhaps one of the most important skills in AI. Machine learning algorithms enable systems to learn from data, identify patterns, make predictions, and improve performance over time without being explicitly programmed.</li>
+                         <li><span>Deep Learning:</span> Deep learning is a subset of machine learning that uses neural networks with many layers to learn from large amounts of data. It has been particularly successful in tasks such as image recognition, natural language processing, and speech recognition.</li>
+                        <li><span>Natural Language Processing (NLP):</span> NLP is the ability of computers to understand, interpret, and generate human language. This skill is essential for applications such as language translation, sentiment analysis, chatbots, and virtual assistants.</li>
+                      <li><span>Computer Vision:</span> Computer vision enables computers to interpret and understand visual information from the real world. It is used in applications such as image recognition, object detection, facial recognition, and autonomous vehicles.</li><a href="skill">Read more</a>
+                    </ul>
+                </div>
+                <div class="tab-content" id="Education">
+                    <ul><li><span>Personalized Learning:</span> AI-powered systems can analyze students' learning patterns and preferences to provide personalized learning experiences. Adaptive learning platforms can adjust the pace, content, and style of instruction based on individual student needs, promoting better understanding and retention.</li>
+                    <li><span>Intelligent Tutoring Systems (ITS):</span> ITS uses AI algorithms to provide customized tutoring and feedback to students. These systems can simulate one-on-one interactions with a human tutor, offering immediate assistance and adapting to students' learning abilities.</li>
+                    <li><span>Automated Grading and Feedback:</span> AI algorithms can automate the grading process for assignments, quizzes, and exams, saving teachers time and providing students with instant feedback. Natural language processing (NLP) techniques enable AI systems to analyze written responses and provide detailed feedback on grammar, coherence, and content.</li>
+                </li><a href="educ">Read more</a>
+                        
+                    </ul>
+                </div>
+                <div class="tab-content" id="Activicy">
+                    <ul><li><span>Data Collection and Preprocessing: </span> and preprocessing large datasets are essential activities in AI. This involves collecting relevant data from various sources, cleaning and formatting it for analysis, and ensuring its quality and consistency.</li>
+                     <li><span>Machine Learning Model Training:</span> Training machine learning models involves feeding data into algorithms to enable them to learn patterns and make predictions or decisions. This process often requires tuning model parameters, selecting appropriate algorithms, and evaluating model performance.</li>
+                    <li><span>Natural Language Processing (NLP):</span> NLP activities involve processing and analyzing human language data, such as text and speech. This includes tasks like text classification, sentiment analysis, named entity recognition, and language translation.</li>
+                    <li><span>Computer Vision:</span> Computer vision activities focus on analyzing and interpreting visual data, such as images and videos. This includes tasks like object detection, image classification, image segmentation, and facial recognition. </li>  
+                    <a href="activ">Read more</a>
+                    </ul>
+                </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+<div id="services"></div>
+    <div class="container">
+        <h1 class="sub">Services</h1> 
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Editor with AI-Copilot</h2>
+                <p> Enhance your screenwriting experience with AI Copilot,which suggests ideas for you.OpenAI provides an arrayofAI related features that are expertly designed to enhance your productivity,offering you a diverse toolkit to fuel your inspiration and streamline your work.</p>
+                <a href="#">learn more</a> 
+            </div>
+            <div>
+                
+                <i class="fa-solid fa-gamepad"></i>
+                <h2>AI Deck Builder</h2>
+                <p>OpenAI Pitch Deck Builder is the ultimate tool for filmmakers looking to create professional quality pitch decks quickly and easily.Our AI-powered platform analysis your scripts coverage to extract key information,helping you craft a compelling  narrative that will capture the attention of investors and producers.</p>
+                <a href="#">learn more</a> 
+            </div>
+            <div>
+                
+                <i class="fa-brands fa-app-store"></i>
+                <h2>AI Storyboard</h2>
+                <p>Storyboarding is a crucial preproduction step in flimmaking process,providing a visual roadmap for  directors,producers and the entire creative team.Traditional storyboards involve static sketches or images that convey the sequence of scenes.</p>
+                <a href="#">learn more</a> 
+            </div>        
+        </div>
+    </div>
+
+    <div id="portfolio">
+        <div class="container">
+            <div class="sub"></div>
+               <div class="work-list">
+                <div class="work">
+                    <img src="static\img\AI-Auto-TaggingDMH-FB-1200x640-1.jpg">
+                    <div class="layer">
+                        <h3>Automate Tag</h3>
+                        <P>Automate tagging,understanding every image and video with the world's best visual recognition technology.Auto-tagging can be used with both text and images, though the process used for images will be different than for text.</P>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="static\img\autonomous-decision-making-AI-shutterstock-1987947446_700x.webp">
+                    <div class="layer">
+                        <h3>Identify human behavior</h3>
+                        <P>Identify human behaviors and traffic patterns within your physical space.To build AI systems that can collaborate effectively with humans, it helps to have a good model of human behavior to start with. But humans tend to behave suboptimally when making decisions</P>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="static\img\0x0.webp">
+                    <div class="layer">
+                        <h3>Ensure Public Safety</h3>
+                        <P>Governments and international organizations are also playing a crucial role in establishing guidelines and regulatory frameworks for the development of safe AI. Such regulations will guide the development, use and implementation of AI technologies in a way that will benefit societies while limiting the harm they may cause.</P>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <a href="#" class="btn"> See more</a>
+                <h1 class="sub">Pricing</h1>
+            </div>
+        </div>
+    </div>
+            
+    <div class="container1" id="pricing">
+        
+        <div class="pricing-column">
+          <div class="pricing-header">
+            <h2 class="plan-name">Basic</h2>
+            <div class="price">$10/month</div>
+          </div>
+          <ul class="features">
+            <li><i class="fa-solid fa-check"></i>
+                Unlimited Screenplays</li>
+             <li ><i class="fa-solid fa-check"></i>
+                Automatic Cloud sync and Backup</li>
+             <li> <i class="fa-solid fa-check"></i>
+                History last 3 days</li>
+             <li><i class="fa-solid fa-check"></i>
+                PDF and Final Draft export Watermarked</li>
+             <li><i class="fa-solid fa-check"></i>
+                Brainstorming</li>
+             <li><i class="fa-solid fa-check"></i>
+                Co Pilot/AI 30 requests per month</li>
+             <li><i class="fa-solid fa-check"></i>
+                AI Image Generations 5 requests per month</li>
+             <li><i class="fa-solid fa-check"></i>
+                Storyboard 5 frames per scene</li>
+             <li><i class="fa-solid fa-check"></i>
+                Scheduling for 1 script</li>
+             <li><i class="fa-solid fa-check"></i>
+                Script Breakdown for 1 script</li>
+          </ul>
+          <a href="#" class="cta-button">Get Started</a>
+        </div>
+        <div class="pricing-column">
+          <div class="pricing-header">
+            <h2 class="plan-name">Standard</h2>
+            <div class="price">$20/month</div>
+          </div>
+          <ul class="features">
+            <li><i class="fa-solid fa-check"></i>
+                Screenplay Title Generations</li>
+             <li>   <i class="fa-solid fa-check"></i>
+                Script Formatting</li>
+             <li>   <i class="fa-solid fa-check"></i>
+                Unlimited Script Breakdown</li>
+             <li>   <i class="fa-solid fa-check"></i>
+                Create Scene</li>
+             <li>  <i class="fa-solid fa-check"></i>
+                PDF and Final Draft import</li>
+                
+             <li>   <i class="fa-solid fa-check"></i>
+                Storyboard with Basic AI image generation</li>
+             <li><i class="fa-solid fa-check"></i>
+                Script Coverage Report for 10 scripts/No</li>
+            <li><i class="fa-solid fa-check"></i>
+                Unlimited - Co Pilot/AI requests</li>
+             <li><i class="fa-solid fa-check"></i>
+                Unlimited - AI Image Generations</li>
+             <li><i class="fa-solid fa-check"></i>
+                Unlimited - Brainstorming</li>
+          </ul>
+          <a href="#" class="cta-button">Get Started</a>
+        </div>
+        <div class="pricing-column">
+          <div class="pricing-header">
+            <h2 class="plan-name">Premium</h2>
+            <div class="price">$30/month</div>
+          </div>
+          <ul class="features">
+            <li><i class="fa-solid fa-check"></i>
+                ColLab: Virtual Writers' Room
+             <li>   <i class="fa-solid fa-check"></i>
+                Plot Hole Detection Report</li>
+              <li>  <i class="fa-solid fa-check"></i>
+                Automatic Script Breakdown: Break down the whole script within a few minutes.</li>
+             <li>   <i class="fa-solid fa-check"></i>
+                PRO AI unlimited requests</li>
+              <li> <i class="fa-solid fa-check"></i>
+                Unlimited - Storyboard with PRO AI image generation</li>
+             <li>   <i class="fa-solid fa-check"></i>
+                Unlimited - Scheduling + Scene Shooting Duration Estimations</li>
+            <li>    <i class="fa-solid fa-check"></i>
+                Script Coverage Reports with a AI</li>
+             <li><i class="fa-solid fa-check"></i>Script Sharing</li> 
+             <li><i class="fa-solid fa-check"></i>Script Breakdown for 1 script</li>  
+          </ul>
+          <a href="#" class="cta-button">Get Started</a>
+        </div>
+      </div>
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub">Contact Me</h1> <br>
+                    <p><i class="fa-solid fa-paper-plane"></i>harishbabu59543@gmail.com</p> <br>
+                    <p><i class="fa-solid fa-phone"></i>6379231383</p>
+                    <div class="social-icons">
+                        <a href=""><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/harish_babu_9396?igsh=bXl6em13ZTcxMTAy"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://x.com/HARISHBABUAG?s=03"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="https://www.linkedin.com/in/harish-babu-g-7523362b0?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="" class="btn btn2">Download Cv</a></div>
+                    </div>
+                    
+                <div class="contact-right">
+                    <form>
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Yor Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Messages.."></textarea>
+                        <button class="btn btn2" type="submit">Submit</button>
+                    </form>
+                </div>  
+            </div>
+        </div>
+    
+    </div>
+    <footer id="foot">&copy;   Harish <i class="fa-solid fa-heart"></i></footer>
+    
+    <script>
+        var tablink = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-content");
+
+        function opentab(tabname){
+            for (tablinks of tablink){
+                tablinks.classList.remove("active-links");
+            }
+        
+            for (tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-links");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemenu.style.right="0";
+
+        }
+        function closemenu(){
+            sidemenu.style.right="-200px";
+        }
+    </script>
+</body>
+</html>

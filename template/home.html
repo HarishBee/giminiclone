@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="{% static 'css\dash.css' %}">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" rel="stylesheet">
+    
+
+    <script src="https://kit.fontawesome.com/d7b2d1dd02.js" crossorigin="anonymous"></script>
+    <link  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    
+</head>
+<body>
+<div class="containerd">
+
+<nav class="top-bar">
+  
+    <div class="dashboard">
+ 
+        <i class="fa-solid fa-house-laptop" style="font-size:30px;align-items: center;display: flex; " > </i>   
+    </div><span  style="font-size:26px;align-items: center;display: flex;color: black;position: relative;right: 380px; "> Dashboard</span>
+   
+    <div class="user-section">
+        <div class="plus" > <a href="#!" id="openModel1" style="text-decoration: none;"> <div class="btn btn-primary" style="border-radius: 50px;display: flex;" >&#43; Create Script</div></a></div>
+    </div>
+        <div class="user">
+           <a href="javascript:void(0)" onclick="openNav()"> <img src="{{ profile_picture }}" alt="Profile Picture" width="30" height="30" ></a>
+            <span style="color: black;">{{ full_name }}</span>
+            
+        </div>
+  
+    </nav>
+
+
+<div class="main-content">
+    
+   
+    
+    <nav class="scripts">
+    <div class="btn btn-primary" id="op"><a href="#!" id="openModal" style="text-decoration: none;" ><i class="fa-regular fa-folder" width="50px" height="50px"></i> My Scripts</a></div>
+    <a href="#!" id="openSharedScript" style="text-decoration: none;padding:10px;"><div style="color: rgb(32, 29, 29);;"><i class="fa-regular fa-folder-open" ></i> Shared Scripts</div> </a>
+    </nav>
+    
+    
+    <div class="container1" id="pricing"> 
+        <div class="pricing-column">
+          <div class="pricing-header"><img style="width: 50px;height: 50px;" src="https://th.bing.com/th/id/R.ebc708be7a85964d3cba66e0b105a272?rik=YUtqopT3GDcUBg&riu=http%3a%2f%2fwww.clipartbest.com%2fcliparts%2fyio%2fLgK%2fyioLgK7yT.png&ehk=tOGW2Wuv75RNbK73sL57HucmnMp7EAwvBZGK6oTKmAk%3d&risl=&pid=ImgRaw&r=0">
+            </div>
+            <h2 class="plan-name">Referral Program 
+            <div class="price">Join as a referer & share the program to start earning back!
+          
+          <a href="#" class="cta-button" style="width: 260px;">Learn more</a></div></h2>
+        </div>
+        <div class="pricing-column">
+            
+            <div class="pricing-header"><img style="width: 50px;height: 50px;" src="https://www.pngrepo.com/png/70480/512/play-button.png"></div>
+              <h2 class="plan-name">Video Tutorials
+              <div class="price">Learn how to utilize NolanAI features.
+           
+            <a href="#" class="cta-button" style="margin: 20px;">Learn more</a> </div></h2>
+        </div>  
+        
+        <div class="pricing-column">
+            <div class="pricing-header"><img style="width: 50px;height: 50px;" src="https://visualneo.com/wp-content/uploads/2018/09/hpwTreeView.png"></div>
+              <h2 class="plan-name">Light, Camera,Feedback
+              <div class="price">Help us make NolanAI even better!
+            
+            <a href="#" class="cta-button" style="margin: 20px;">Take survey</a></div></h2>
+        </div>
+    </div>
+    
+
+    <div class="text-sections">
+        <div class="start-script">Start your first script</div>
+        <div class="work-progress">Once you set up your first script, all your work in progress will appear here.</div>
+
+        <div class="cont">
+            <h3 style="text-align: center;">Welcome to GEMINI clone</h3>
+            <form action="{% url 'answer' %}" method="POST">
+                {% csrf_token %}
+                <input type="text" name="question" placeholder="ask any question:">
+                <button class="btn waves-effect waves-light" type="submit" >
+                    Submit
+                </button>
+            </form>
+            {% block content %}
+            {% endblock %}
+        </div>
+    </div>
+    
+    <div id="mySidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="#">Profile</a>
+        <a href="#">Settings</a>
+        <a href="#">Help</a>
+        <a href="#" class="logout">Logout</a>
+    </div>
+
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>   
+    </div>
+</div>
+<div id="modal1" class="modal">
+    <div class="modal-content">
+        <h4>Create a new script</h4>
+        <p>Select the format you want to write a script for:</p>
+        <form>
+            <label>
+                <input name="scriptFormat" type="radio" value="feature_film" />
+                <span>Feature Film</span>
+            </label>
+            <p>Begin crafting your feature film screenplay with the assistance of Co-Pilot's power.</p>
+            <label>
+                <input name="scriptFormat" type="radio" value="video_short" />
+                <span>Video Short</span>
+            </label>
+            <p>Take your video shorts to new heights by utilizing AI to craft your scripts in screenplay format.</p>
+        </form>
+    </div>
+    <div class="modal-footer">
+        <a href="#!" class="modal-close waves-effect waves-green btn-flat">Cancel</a>
+        <a href="#!" id="next" class="modal-close waves-effect waves-green btn-flat" >Next</a>
+    </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+
+
+<div id="modal2" class="modal hidden">
+    <div class="modal-content">
+        <h4>Create a new script</h4>
+        
+        <form id="newScriptForm" action="#!" method="POST">
+            {% csrf_token %}
+            <div class="input-field">
+                <input id="title" type="text" name="title" class="validate" placeholder="Untitled Screenplay">
+                <label for="title">Title</label>
+            </div>
+            <div>Suggest titles based on the synopsis <span>Suggest title<i class="fa-solid fa-user-gear"></i></span></div>
+            <div class="input-field">
+                <input id="synopsis" name="synopsis" type="text" class="validate">
+                <label for="synopsis">Synopsis</label>
+            </div>
+            <div class="input-field">
+                <input id="genre" type="text" name="genre" class="validate">
+                <label for="genre">Genre</label>
+            </div>
+            <p>Upload Fountain File: <br>
+                <h6>When uploading a PDF file, please ensure that the screenplay is in the industry-standard format. Otherwise, it might be parsed incorrectly.</h6><a href="#" id="uploadFileLink">Upload</a></p>
+            <div id="fileUploadSection" style="display: none;">
+                <input type="file" id="fountainFile" accept=".fountain">
+            </div>
+        </form>
+    </div>
+    <div class="modal-footer">
+        <a href="#!" class="modal-close waves-effect waves-green btn-flat">Cancel</a>
+        <a href="#!" id="backButton" class="waves-effect waves-green btn-flat">Back</a>
+        <button id="submitScriptBtn" class="waves-effect waves-green btn-flat">Submit</button>
+    </div>
+</div>
+
+<div id="modal3" class="modal hidden">
+    <div class="modal-content">
+        <h4>Invite Co-Authors</h4>
+        <p>Now you can invite colleagues and collaborate with them on a script in real time!</p>
+        <a href="" ><img style="width:50px;height: 50px; position:absolute;right: 100px;bottom: 10px;" src="https://www.pngall.com/wp-content/uploads/2/Upload-PNG.png" alt="Invite Image"></a> 
+    </div>
+</div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.modal');
+    var instances = M.Modal.init(elems);
+    
+    document.getElementById('openModal','openModel1').addEventListener('click', function() {
+            instances[0].open();
+        });
+        document.getElementById('openModel1').addEventListener('click', function() {
+            instances[0].open();
+        });
+    // Handle next button click to open second modal and execute the script
+    document.getElementById('next').addEventListener('click', function() {
+        var selectedFormat = document.querySelector('input[name="scriptFormat"]:checked');
+        if (!selectedFormat) {
+            alert('Please select a script format before proceeding.');
+            return;
+        }
+        instances[0].close();
+        // Remove the 'hidden' class from modal2 to display it
+        document.getElementById('modal2').classList.remove('hidden');
+        // Open modal2
+        instances[1].open();
+
+        
+    });
+
+    // Handle upload file link click
+    document.getElementById('uploadFileLink').addEventListener('click', function(event) {
+        event.preventDefault();
+        document.getElementById('fileUploadSection').style.display = 'block';
+    });
+
+    // Handle back button click
+    document.getElementById('backButton').addEventListener('click', function() {
+        instances[1].close();
+        document.getElementById('modal1').classList.remove('hidden');
+        instances[0].open();
+    });
+
+    // Handle form submission
+    document.getElementById('submitScriptBtn').addEventListener('click', function() {
+        document.getElementById('newScriptForm').submit();
+    });
+    document.getElementById('openSharedScript').addEventListener('click', function() {
+    // Remove the 'hidden' class from modal2 to display it
+    document.getElementById('modal3').classList.remove('hidden');
+    // Update modal2 content
+    `
+       
+        
+    `
+    // Open modal2
+    instances[2].open();
+});
+});
+function openNav() {
+        document.getElementById("mySidebar").style.width = "250px";
+        document.getElementById("main").style.marginRight = "250px";
+    }
+
+    function closeNav() {
+        document.getElementById("mySidebar").style.width = "0";
+        document.getElementById("main").style.marginRight= "0";
+    }
+
+</script>
+
+</body>
+</html>

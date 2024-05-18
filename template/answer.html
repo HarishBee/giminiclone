@@ -1,0 +1,11 @@
+{% extends 'home.html' %}
+
+{% block content %}
+    <h4>AI answer:</h4>
+    <div class="card">
+        <div class="card-content">
+            <p><strong>Your question:</strong> {{ question }}</p>
+            <p><strong>AI answer:</strong> {{ response }}</p>
+        </div>
+    </div>
+{% endblock %}
